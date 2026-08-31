@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAIZEN Internal</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f3f8f8;
+color:#1f2937;
+}
+header{
+background:#087b7e;
+color:white;
+padding:28px 20px;
+}
+header h1{margin:0;font-size:28px;letter-spacing:3px}
+header p{margin:6px 0 0;letter-spacing:2px}
+
+.container{
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+background:#0b8588;
+color:white;
+padding:28px;
+border-radius:20px;
+margin-bottom:20px;
+}
+.hero h2{font-size:30px;margin:0 0 10px}
+
+.btn{
+display:inline-block;
+background:#087b7e;
+color:white;
+padding:13px 18px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+}
+
+.btn.white{
+background:white;
+color:#087b7e;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:16px;
+margin-bottom:16px;
+box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccd9d9;
+border-radius:9px;
+margin-top:6px;
+margin-bottom:16px;
+font-size:16px;
+}
+
+textarea{height:110px}
+
+label{font-weight:bold}
+
+.category{
+display:inline-block;
+border:1px solid #087b7e;
+padding:9px;
+border-radius:8px;
+margin:4px;
+font-size:14px;
+}
+
+.status{
+display:inline-block;
+background:#fff1c9;
+color:#795500;
+padding:7px 10px;
+border-radius:20px;
+font-size:13px;
+}
+
+.success{
+text-align:center;
+font-size:22px;
+padding:30px;
+}
+
+section{
+scroll-margin-top:15px;
+}
+
+.small{
+color:#6b7280;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>KAIZEN</h1>
+<p>INTERNAL IDEA HUB</p>
+</header>
+
+<div class="container">
+
+<section id="home">
+
+<div class="hero">
+<h2>Small ideas.<br>Big impact.</h2>
+
+<p>
+Kaizen Internal is a safe space where employees can share ideas
+to improve our workplace, customer experience and operations.
+</p>
+
+<a class="btn white" href="#submit">+ Submit New Idea</a>
+<a class="btn white" href="#ideas">Track My Ideas</a>
+</div>
+
+<div class="card">
+<h3>How it works</h3>
+
+<p>💡 <b>Submit</b><br>
+<span class="small">Share your improvement idea.</span></p>
+
+<p>👀 <b>Review</b><br>
+<span class="small">Your idea will be reviewed by management.</span></p>
+
+<p>📍 <b>Track</b><br>
+<span class="small">Follow your idea status.</span></p>
+</div>
+
+</section>
+
+
+<section id="submit">
+
+<div class="card">
+
+<h2>Submit Your Kaizen Idea</h2>
+<p class="small">Every idea matters.</p>
+
+<label>1. Full Name *</label>
+<input type="text" placeholder="Enter your full name">
+
+<label>2. Employee Number *</label>
+<input type="text" placeholder="Enter employee number">
+
+<label>3. Business Unit *</label>
+<select>
+<option>Select Business Unit</option>
+<option>Watch & Jewelry</option>
+<option>SWS</option>
+<option>Mizzen</option>
+<option>Seddiqi Properties</option>
+<option>Office</option>
+</select>
+
+<label>4. Idea Category *</label>
+
+<div>
+<span class="category">Process Improvement</span>
+<span class="category">Customer Experience</span>
+<span class="category">Employee Wellbeing</span>
+<span class="category">Logistics & Operation</span>
+<span class="category">Digital Innovation</span>
+</div>
+
+<br>
+
+<label>5. Idea Title *</label>
+<input type="text" placeholder="Give your idea a short title">
+
+<label>6. Describe Your Idea *</label>
+<textarea placeholder="Describe your idea and what you would like to improve"></textarea>
+
+<label>7. Attachment</label>
+<input type="file">
+
+<label>8. Idea Benefits</label>
+<textarea placeholder="What positive impact could your idea create?"></textarea>
+
+<label>9. How easy was it to submit your idea?</label>
+<select>
+<option>⭐ Very Difficult</option>
+<option>⭐⭐</option>
+<option>⭐⭐⭐</option>
+<option>⭐⭐⭐⭐</option>
+<option>⭐⭐⭐⭐⭐ Very Easy</option>
+</select>
+
+<label>10. How can we improve this submission process?</label>
+<textarea placeholder="Share your feedback"></textarea>
+
+<a class="btn" href="#success">Submit Idea</a>
+<a class="btn" href="#home">Cancel</a>
+
+</div>
+
+</section>
+
+
+<section id="success">
+
+<div class="card success">
+
+<div style="font-size:55px">✅</div>
+
+<h2>Idea Submitted!</h2>
+
+<p>
+Thank you for contributing to continuous improvement.
+</p>
+
+<p><b>Idea ID</b></p>
+
+<h2 style="color:#087b7e">KZN-2026-001</h2>
+
+<span class="status">Submitted – Under Review</span>
+
+<br><br>
+
+<a class="btn" href="#ideas">Track My Idea</a>
+
+<a class="btn" href="#home">Home</a>
+
+</div>
+
+</section>
+
+
+<section id="ideas">
+
+<div class="card">
+
+<h2>My Ideas</h2>
+
+<div class="card">
+<b>Digital Client Follow-Up Reminder</b>
+
+<p class="small">
+KZN-2026-001<br>
+Customer Experience
+</p>
+
+<span class="status">Under Review</span>
+
+</div>
+
+<div class="card">
+
+<b>Shared Handover Checklist</b>
+
+<p class="small">
+KZN-2026-002<br>
+Process Improvement
+</p>
+
+<span style="
+background:#dff7e9;
+color:#126b46;
+padding:7px 10px;
+border-radius:20px;
+font-size:13px;
+">
+Approved
+</span>
+
+</div>
+
+<a class="btn" href="#submit">+ Submit New Idea</a>
+
+<a class="btn" href="#home">Home</a>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
